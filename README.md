@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe and Blog Pages</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Recipe</title>
+  
   <style>
-    .div{
-  width: 200px;
-  border: 10px;
-  padding: 50px;
-  margin: 25px;
-
+    
+    .div {
+  width:0px;
+  border: 15px solid green;
+  padding:0px;
+  margin:0px;
+  
 }
-
 /* Recipe Page Styles */
 .recipe-page {
-  background-color: #8e8f72;
+  background-color:palegreen;
   padding: 50px;
   text-align:center /* Text aligned left */
   margin: 10px;
@@ -25,16 +25,18 @@
 .recipe-header {
   background-color: #5a9;
   color: rgb(214, 199, 199);
-  padding: 10px;
-  font-size: 44px;
+  padding: 30px;
+  margin: 30px;
+  font-size: 50px;
   text-align: center;
+  
 }
 
 .recipe-description {
-  margin: 10px 0;
+  margin: 20px ;
+  padding: 20px;
   font-style: italic;
   background-color:aqua;
-  padding: 10px;
   text-align: center;
 
 }
@@ -55,6 +57,9 @@ ol{
 }
 
 .recipe-section h2 {
+  border: 10px;
+  margin: 5px;
+  padding: 5px;
   color: #b23;
 }
 
@@ -70,7 +75,7 @@ ol{
   <div class="recipe-page">
     <header class="recipe-header"> Apple Pie</header>
     <div class="recipe-description">
-      This easy apple pie recipe belongs to my mother. I make it all the time when I want a simple homemade pie. 
+      This easy apple pie recipe belongs to my mother. I make it all the time when I want a simple homemade pie. <br>
       I love it! I often add a dash of nutmeg to the apple filling.
     </div>
     <section class="recipe-section">
@@ -100,4 +105,6 @@ ol{
     </section><br>
     <footer class="recipe-footer">© 2023 by Your Name. All rights reserved.</footer>
   </div>
+
+
 
