@@ -602,3 +602,70 @@ console.log("All done");
 
 
 
+
+    const cars = ["BMW", "Volvo", "Saab", "Ford"]
+for (n=0; n<=3; n=n+1) {
+    console.log (cars[n])
+}
+
+
+
+
+
+
+
+
+// update the book year published
+
+const library = [
+  { title: "english", author: "Umer", year: "2025" },
+  { title: "isl", author: "Umer", year: "2025" }
+];
+
+library.push({ title: "pst", author: "umer", year: "2025" });
+for (let i = 0; i < library.length; i++) {
+  if (library[i].title === "pst") { 
+    library.splice(i,1);
+  }
+}
+// console.log(library)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for (let n = 1; n <= 100; n = n + 1) {
+    if (n == 50) {
+        console.log("Half way there!");
+    } else if (n == 100) {
+        console.log("You made it!");
+    } else if (n % 10 == 0) {
+        console.log(`CheckPoint! ${n}`);
+    }
+}
+
+console.log("All done");
+
+
+
+// 2D 
+
+
+let exampleString = "firstline\ n secondline\ttabbed!";
+console.log(exampleString)
+
+let path = "C:\\Users\\Name\\Documents"
+console.log(path)
+
+// 
+
+
