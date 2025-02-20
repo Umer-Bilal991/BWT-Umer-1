@@ -566,3 +566,39 @@ for (let n=1; n<=100; n=n+1){
 
 
 
+
+
+
+
+
+
+
+
+
+for (n=1; n<=100; n=n+1){
+    if (i==50){
+        console.log("Half way there!");
+    }else if (i==100){
+        console.log("You made it!");
+    }else if(n % 10==0){
+    console.log("Checkpiont! $(n)");
+}
+}
+console.log ("All done!")
+
+
+
+for (let i = 1; i <= 100; i++) {
+    if (i === 50) {
+        console.log("Half way there!");
+    } else if (i === 100) {
+        console.log("You made it!");
+    } else if (i % 10 === 0) {
+        console.log(`CheckPoint! ${i}`);
+    }
+}
+
+console.log("All done");
+
+
+
