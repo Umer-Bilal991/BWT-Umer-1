@@ -669,3 +669,37 @@ console.log(path)
 // 
 
 
+
+
+
+
+
+
+
+
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <h1 id="heading">Old heading</h1>
+//     <p id="paragraph">Old text</p>
+    
+// </body>
+// </html>
+// <script src="./ub.js"></script>
+
+
+
+// let paragraph = document.querySelector('p')
+// paragraph.textContent = 'This is new text '
+// console.log(paragraph
+// ) -->
+
+
+
+
