@@ -703,3 +703,102 @@ console.log(path)
 
 
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li id="item">Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <input type="text" id="input">
+    <h1 id="name"></h1>
+    <script src="ub.js"></script>
+</body>
+</html>
+
+
+
+
+
+// function action(e) {
+//     child.remove();
+//     console.log('Child is removed', e);
+// }
+
+// child.addEventListner('click', action);
+
+// const input = document.getElementById('input');
+// const h1= document.getElementById('Name');
+
+// function inputAction(e) {
+//     console.log(e)
+// }
+
+// function Counter  (initialValue){
+//     this.value = initialValue;
+//     this.reset = function() {
+//         this.value=initialValue;
+//     }
+//     this.increment = function (){
+//         this.value++;
+//     }
+//     this.decrement = function(){
+//         this.value--;
+//     }
+// }
+
+
+
+// function greet (Name, callback) {
+//     console.log('Hello', + Name)
+//     callback()
+// }
+
+// function sayGoodbye () {
+//     console.log('Goodbye')
+// }
+
+// greet ('Alice', sayGoodbye)
+
+
+// function calculate (a, b,  callback) {
+//    return callback(a, b);
+// }
+
+// const addition = (a,b) => a + b;
+
+// const result = calculate(1,2, addition);
+// console.log(result);
+
+
+
+// const arr = [
+//     1, 2, 3, 4, 5
+// ];
+
+// const action = (number) => number*5 ;
+
+// const result = arr.map(action)
+
+// console.log (result)
+
+
+
+
+// const students = [
+//     {firstName: 'Alice', lastName: 'Smith'},
+//     {firstName: 'Alice', lastName: 'Smith'},
+//     {firstName: 'Alice', lastName: 'Smith'},
+//     {firstName: 'Alice', lastName: 'Smith'},
+    
+// ];
+
+// console.log( students.map((students) => students.firstName +'' + students.lastName))
+
+
