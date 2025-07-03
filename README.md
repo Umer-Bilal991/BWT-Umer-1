@@ -108,3 +108,89 @@ ol{
 
 
 
+
+
+ 
+
+// obj = {
+//     'GET' : {
+//         '/' : () => {},
+//         '/users' : () => {},
+//     },
+//     'PUT' : {
+//         '/' : () => {},
+//         '/users' : () => {},
+//     },
+//     'POST' : {
+//         '/' : () => {},
+//         '/users' : () => {},
+//     },
+//     'DELETE' : {
+//         '/' : () => {},
+//         '/users' : () => {},
+//     },
+
+// }
+
+// const obj = {
+//     GET: {
+//         '/':getdashboardpage, 
+//         '/login' : getloginPage,
+//         '/profile': getprofilePage,
+//     },
+//     POST: {
+//         '/login': postLoginRequest,
+//     }
+// }   
+
+// const http = require('http');   
+// const url = require('url');
+
+// const getdashboardpage = (req, res) => res.end('Dashboard Page');
+// const getloginPage = (req, res) => res.end('Login Page');
+// const getprofilePage = (req, res) => res.end('Profile Page');
+// const postLoginRequest = (req, res) => res.end('Handling POST Login');
+
+
+const http = require('http');
+const url = require('url');
+
+// Handlers (dummy functions for now)
+const getdashboardpage = (req, res) => res.end('Dashboard Page');
+const getloginPage = (req, res) => res.end('Login Page');
+const getprofilePage = (req, res) => res.end('Profile Page');
+const postLoginRequest = (req, res) => res.end('Handling POST Login');
+
+// Route map
+const obj = {
+    GET: {
+        '/': getdashboardpage,
+        '/login': getloginPage,
+        '/profile': getprofilePage,
+    },
+    POST: {
+        '/login': postLoginRequest,
+    }
+};
+
+// Server logic
+const server = http.createServer((req, res) => {
+    const method = req.method;
+    const parsedUrl = url.parse(req.url, true);
+    const pathname = parsedUrl.pathname;
+
+    const methodRoutes = obj[method];
+
+    if (methodRoutes && methodRoutes[pathname]) {
+        methodRoutes[pathname](req, res); // Call the corresponding handler
+    } else {
+        res.statusCode = 404;
+        res.end('404 Not Found');
+    }
+});
+
+// Start the server
+const PORT = 3000;
+server.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});
